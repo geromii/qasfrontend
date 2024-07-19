@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/geromii/qasfrontend/compare/v1.0.1...v1.0.2) (2024-07-19)
+
+
+### Bug Fixes
+
+* **finding env variables:** checking env variables in next ([86aee1a](https://github.com/geromii/qasfrontend/commit/86aee1a9f5777312691c539f6423289691406076))
+
 ## [1.0.1](https://github.com/geromii/qasfrontend/compare/v1.0.0...v1.0.1) (2024-07-19)
 
 
