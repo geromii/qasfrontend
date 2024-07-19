@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/geromii/qasfrontend/compare/v1.0.0...v1.0.1) (2024-07-19)
+
+
+### Bug Fixes
+
+* **bug finding:** bug finding ([3c85dc9](https://github.com/geromii/qasfrontend/commit/3c85dc9477de1a4270919f0b17806c571ff294b9))
+
 # 1.0.0 (2024-07-19)
 
 
