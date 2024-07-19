@@ -13,7 +13,7 @@ import { Env } from './Env';
 
 console.log('NEXT_PHASE:', process.env.NEXT_PHASE);
 console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('DATABASE_URL:', Env.DATABASE_URL ? 'Set' : 'Not set');
+console.log('DATABASE_URL:', Env.DATABASE_URL ? Env.DATABASE_URL : 'Not set');
 
 // eslint-disable-next-line prettier/prettier
 
