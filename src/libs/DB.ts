@@ -12,17 +12,17 @@ import * as schema from '@/models/Schema';
 import { Env } from './Env';
 import path from 'path';
 
-// Logging environment variables for debugging
 console.log('NEXT_PHASE:', process.env.NEXT_PHASE);
 console.log('NODE_ENV:', process.env.NODE_ENV);
 console.log('DATABASE_URL:', Env.DATABASE_URL ? 'Set' : 'Not set');
 
-// Using an absolute path for migrations
 const migrationsFolder = path.join(process.cwd(), 'migrations');
 
-let db: PgDatabase<any, any, any>;
+let db: PgDatabase<any, any, any> | null = null;
 
 async function initializeDatabase() {
+  if (db) return db;
+
   try {
     if (
       process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD &&
@@ -47,16 +47,16 @@ async function initializeDatabase() {
       await migratePglite(db, { migrationsFolder });
     }
     console.log('Database initialized successfully');
+    return db;
   } catch (error) {
     console.error('Database initialization error:', error);
     throw error;
   }
 }
 
-// Initialize the database
-initializeDatabase().catch((error) => {
-  console.error('Failed to initialize database:', error);
-  process.exit(1);
-});
-
-export { db };
+export async function getDb() {
+  if (!db) {
+    db = await initializeDatabase();
+  }
+  return db;
+}
