@@ -18,7 +18,7 @@ export const config = defineConfig({
     environmentVariables: [
       {
         key: 'PRODUCTION_URL',
-        value: 'https://qasdata.com',
+        value: 'https://www.qasdata.com',
       },
     ],
     browserChecks: {

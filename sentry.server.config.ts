@@ -5,7 +5,7 @@
 import * as Sentry from '@sentry/nextjs';
 
 Sentry.init({
-  dsn: 'https://910192fcda064703d4bf094636ec96d1@o4507622863142912.ingest.us.sentry.io/4507622869565440_',
+  dsn: 'https://910192fcda064703d4bf094636ec96d1@o4507622863142912.ingest.us.sentry.io/4507622869565440',
 
   // Enable Spotlight in development
   spotlight: process.env.NODE_ENV === 'development',
