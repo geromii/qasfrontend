@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/geromii/qasfrontend/compare/v1.0.2...v1.0.3) (2024-07-19)
+
+
+### Bug Fixes
+
+* test env variables ([0935d99](https://github.com/geromii/qasfrontend/commit/0935d9956e549a8b91ee3f98f37e02eec09ebcc9))
+
 ## [1.0.2](https://github.com/geromii/qasfrontend/compare/v1.0.1...v1.0.2) (2024-07-19)
 
 
