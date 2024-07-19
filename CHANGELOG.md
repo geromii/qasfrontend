@@ -1,3 +1,10 @@
+# 1.0.0 (2024-07-19)
+
+
+### Bug Fixes
+
+* **api:** api attempted fix ([1aeeada](https://github.com/geromii/qasfrontend/commit/1aeeada16963fb6d10c1c782d198b1c408949b2b))
+
 # [3.53.0](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.52.0...v3.53.0) (2024-06-26)
 
 
