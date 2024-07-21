@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/geromii/qasfrontend/compare/v1.0.3...v1.0.4) (2024-07-21)
+
+
+### Bug Fixes
+
+* changed next public url ([6ca962e](https://github.com/geromii/qasfrontend/commit/6ca962e748f7be8c2e81ece5cd1288a8e5883ad1))
+
 ## [1.0.3](https://github.com/geromii/qasfrontend/compare/v1.0.2...v1.0.3) (2024-07-19)
 
 
