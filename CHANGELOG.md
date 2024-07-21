@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/geromii/qasfrontend/compare/v1.0.4...v1.0.5) (2024-07-21)
+
+
+### Bug Fixes
+
+* app url attempted fix ([c556248](https://github.com/geromii/qasfrontend/commit/c5562483b0b6329edb69888732c27902ea43b823))
+
 ## [1.0.4](https://github.com/geromii/qasfrontend/compare/v1.0.3...v1.0.4) (2024-07-21)
 
 
