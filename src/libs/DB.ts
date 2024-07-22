@@ -4,6 +4,7 @@ import { migrate as migratePg } from 'drizzle-orm/node-postgres/migrator';
 import type { PgDatabase } from 'drizzle-orm/pg-core';
 import { drizzle as drizzlePglite } from 'drizzle-orm/pglite';
 import { migrate as migratePglite } from 'drizzle-orm/pglite/migrator';
+import fs from 'fs';
 import { PHASE_PRODUCTION_BUILD } from 'next/dist/shared/lib/constants';
 import path from 'path';
 import { Client } from 'pg';
@@ -27,14 +28,9 @@ if (
 
   drizzle = drizzlePg(client, { schema });
 
-  const migrationsFolder = path.join(process.cwd(), 'migrations');
-  try {
-    await migratePg(drizzle, { migrationsFolder });
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error('Migration failed:', error);
-    throw error;
-  }
+  const folderPath = path.join(process.cwd(), 'migrations');
+  console.log('Migrations folder contents:', fs.readdirSync(folderPath));
+  await migratePg(drizzle, { migrationsFolder: './migrations' });
 } else {
   const global = globalThis as unknown as { client: PGlite };
 
