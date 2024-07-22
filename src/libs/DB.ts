@@ -28,9 +28,15 @@ if (
     connectionString: Env.DATABASE_URL,
   });
   await client.connect();
+  // eslint-disable-next-line no-console
+  console.log('Connected to Postgres');
 
   drizzle = drizzlePg(client, { schema });
+  // eslint-disable-next-line no-console
+  console.log('Migrating Postgres');
   await migratePg(drizzle, { migrationsFolder: './migrations' });
+  // eslint-disable-next-line no-console
+  console.log('Migrated Postgres');
 } else {
   const global = globalThis as unknown as { client: PGlite };
 
