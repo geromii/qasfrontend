@@ -27,10 +27,7 @@ if (
   await client.connect();
 
   drizzle = drizzlePg(client, { schema });
-  // eslint-disable-next-line no-console
-  console.log('Current working directory:', process.cwd());
-  // eslint-disable-next-line no-console
-  console.log('Migrations folder:', path.join(process.cwd(), 'migrations'));
+
   const migrationsFolder = path.join(process.cwd(), 'migrations');
   // eslint-disable-next-line no-console
   console.log('Migrations folder contents:', fs.readdirSync(migrationsFolder));
