@@ -16,26 +16,17 @@ import { Env } from './Env';
 let client;
 let drizzle: PgDatabase<any, any, any>;
 
-// eslint-disable-next-line no-console
-console.log(Env.DATABASE_URL);
-
 if (
   process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD &&
   process.env.NODE_ENV === 'production' &&
   Env.DATABASE_URL
 ) {
-  // eslint-disable-next-line no-console
-  console.log('Connecting to Postgres');
   client = new Client({
     connectionString: Env.DATABASE_URL,
   });
   await client.connect();
-  // eslint-disable-next-line no-console
-  console.log('Connected to Postgres');
 
   drizzle = drizzlePg(client, { schema });
-  // eslint-disable-next-line no-console
-  console.log('Migrating Postgres');
   // eslint-disable-next-line no-console
   console.log('Current working directory:', process.cwd());
   // eslint-disable-next-line no-console
@@ -44,8 +35,6 @@ if (
   // eslint-disable-next-line no-console
   console.log('Migrations folder contents:', fs.readdirSync(migrationsFolder));
   await migratePg(drizzle, { migrationsFolder: './migrations' });
-  // eslint-disable-next-line no-console
-  console.log('Migrated Postgres');
 } else {
   const global = globalThis as unknown as { client: PGlite };
 
