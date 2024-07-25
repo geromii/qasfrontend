@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/geromii/qasfrontend/compare/v1.0.5...v1.0.6) (2024-07-25)
+
+
+### Bug Fixes
+
+* added environment variable in yml file ([2b34169](https://github.com/geromii/qasfrontend/commit/2b341693b7420d70e03d80ac96388fa875459332))
+
 ## [1.0.5](https://github.com/geromii/qasfrontend/compare/v1.0.4...v1.0.5) (2024-07-21)
 
 
