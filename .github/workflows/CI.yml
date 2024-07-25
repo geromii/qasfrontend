@@ -47,8 +47,7 @@ jobs:
           cache: "npm"
       - run: npm ci
       - name: Set environment variables
-       run: echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> $GITHUB_ENV
-
+        run: echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> $GITHUB_ENV
       - name: Set SENTRY_AUTH_TOKEN env if secret exists
         run: |
           if [[ -n "${{ secrets.SENTRY_AUTH_TOKEN }}" ]]; then

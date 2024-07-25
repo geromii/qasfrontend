@@ -85,7 +85,7 @@ export default function Index() {
           Better Stack
         </a>
         , Monitoring as Code with Checkly, Storybook, Multi-language (i18n), and
-        more. Test.
+        more. Test. Test.
       </p>
     </>
   );
