@@ -8,9 +8,9 @@ const emailChannel = new EmailAlertChannel('email-channel-1', {
 });
 
 export const config = defineConfig({
-  projectName: 'Next.js Boilerplate',
-  logicalId: 'nextjs-boilerplate',
-  repoUrl: 'https://github.com/ixartz/Next-js-Boilerplate',
+  projectName: 'QAS Frontend',
+  logicalId: 'qas-frontend',
+  repoUrl: 'https://github.com/geromii/qasfrontend',
   checks: {
     locations: ['us-east-1', 'eu-west-1'],
     tags: ['website'],
