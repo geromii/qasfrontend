@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/geromii/qasfrontend/compare/v1.0.6...v1.0.7) (2024-07-25)
+
+
+### Bug Fixes
+
+* fixed ci tests ([e892a3d](https://github.com/geromii/qasfrontend/commit/e892a3d4359ac325a5d7fd3321779f72ad7a0fd6))
+
 ## [1.0.6](https://github.com/geromii/qasfrontend/compare/v1.0.5...v1.0.6) (2024-07-25)
 
 
