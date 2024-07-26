@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import AccountLinks from '@/components/AccountLinks';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
-import { LogOutButton } from '@/components/LogOutButton';
 import { BaseTemplate } from '@/templates/BaseTemplate';
 
 export default function DashboardLayout(props: { children: React.ReactNode }) {
@@ -32,18 +32,7 @@ export default function DashboardLayout(props: { children: React.ReactNode }) {
       }
       rightNav={
         <>
-          <li>
-            <Link
-              href="/dashboard/user-profile/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              {t('user_profile_link')}
-            </Link>
-          </li>
-          <li>
-            <LogOutButton />
-          </li>
-
+          <AccountLinks />
           <li>
             <LocaleSwitcher />
           </li>

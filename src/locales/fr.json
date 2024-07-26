@@ -68,5 +68,11 @@
     "dashboard_link": "Tableau de bord",
     "user_profile_link": "Compte",
     "sign_out": "Se déconnecter"
+  },
+  "AccountLinks": {
+    "user_profile_link": "Account",
+    "sign_out": "Sign out",
+    "sign_in_link": "Sign in",
+    "sign_up_link": "Sign up"
   }
 }
