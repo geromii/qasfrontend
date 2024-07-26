@@ -64,8 +64,9 @@
     "meta_title": "Profil de l'utilisateur"
   },
   "DashboardLayout": {
+    "home_link": "Accueil",
     "dashboard_link": "Tableau de bord",
-    "user_profile_link": "Gérer votre compte",
+    "user_profile_link": "Compte",
     "sign_out": "Se déconnecter"
   }
 }

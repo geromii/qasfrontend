@@ -14,12 +14,24 @@ export default function DashboardLayout(props: { children: React.ReactNode }) {
         <>
           <li>
             <Link
+              href="/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('home_link')}
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/dashboard/"
               className="border-none text-gray-700 hover:text-gray-900"
             >
               {t('dashboard_link')}
             </Link>
           </li>
+        </>
+      }
+      rightNav={
+        <>
           <li>
             <Link
               href="/dashboard/user-profile/"
@@ -28,10 +40,6 @@ export default function DashboardLayout(props: { children: React.ReactNode }) {
               {t('user_profile_link')}
             </Link>
           </li>
-        </>
-      }
-      rightNav={
-        <>
           <li>
             <LogOutButton />
           </li>
