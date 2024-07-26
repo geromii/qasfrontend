@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/geromii/qasfrontend/compare/v1.0.7...v1.1.0) (2024-07-26)
+
+
+### Features
+
+* changed menu behaviour ([83634c9](https://github.com/geromii/qasfrontend/commit/83634c91e2c3ece2606fd39fca7d48dcb1a0d0d3))
+
 ## [1.0.7](https://github.com/geromii/qasfrontend/compare/v1.0.6...v1.0.7) (2024-07-25)
 
 
